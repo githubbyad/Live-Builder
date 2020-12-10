@@ -68,6 +68,13 @@
       <desc>Upload Image in "Sections" icon in "Site Manager".<br>Add <cl>Class</cl> <hp>hpe-custom-img-?</hp> in parent div as shown in screenshot.<br>Here "?" is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br><nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as <tg>&lt;/\ script&gt;</tg></desc>
       <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/customimg.png"></screen>
     </li>
+    <li>
+      <topic>Section Layout</topic>
+      <desc>If there are "Menu" and "SubMenu" links placed outside {{RepeatBegin}}, then <br>add <cl>Class</cl> <hp>hpe-in-menu-only</hp> and <at>Attributes</at> <dat>data-menu="{{MenuId}}"</dat> in Menu's div.<br>Sameway add <cl>Class</cl> <hp>hpe-in-submenu-only</hp> and <at>Attributes</at> <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}"</dat> in Submenu's div. <br>See below screenshot for "Menu" and "SubMenu".</desc>
+      <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/sectionmenu.png"></screen>
+      <br><desc>Now, add <cl>Class</cl> <hp>hpe-in-section</hp> and <at>Attributes</at> <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
+      <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/sectionlayout.png"></screen>
+    </li>
 </ol>
 </div>
 </div>
@@ -140,7 +147,7 @@ screen {
 }
 ol {
 	float: left;
-	width: 95%;
+	width: 93%;
 	margin-top: 50px;
 }
 h1 {
