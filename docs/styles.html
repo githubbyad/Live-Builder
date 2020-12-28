@@ -1,8 +1,7 @@
 <html>
-<title>Live Builder Documentation - Editor Mode</title>
+<title>Live Builder Documentation - Style Mode</title>
 
 <head>
-    <script type="text/javascript" src="https://bulletlink.com/JQuery/jquery.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script>
@@ -24,278 +23,66 @@
 </head>
 
 <body class="hpv_body">
-    <div class="search_box">
-        <img title="Search Topics" src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/search--v2.png">
-    </div>
-    <div class="search_close"></div>
-    <div class="search_select">
-        <select id="search_topic">
-        <option value="">Select Topic</option>
-        <option value="header_files">Header files</option>
-        <option value="blbodymain">Body Tag ID</option>
-        <option value="logo">Logo</option>
-        <option value="adgroup">Adgroup</option>
-        <option value="weather">Weather</option>
-        <option value="gsearch">Search Bar</option>
-        <option value="social">Social Links</option>
-        <option value="top_links">Top Links</option>
-        <option value="bottom_links">Bottom Links</option>
-        <option value="custom_text">Custom Text</option>
-        <option value="custom_html">Custom HTML</option>
-        <option value="custom_img">Custom Image</option>
-        <option value="section">Section Layout</option>
-        <option value="default">Default Layout</option>
-        <option value="menu">Menu</option>
-        <option value="highlight">Highlight</option>
-        <option value="previews">Previews</option>
-        <option value="articlegroup">ArticleGroup</option>
-        <option value="only_article">Only 1 Article</option>
-        <option value="event">Event(New)</option>
-    </select>
-    </div>
     <div class="hpv_div1">
         <div class="hpe_div2">
             <h1>
                 <dmt>Documentation</dmt><br>
-                <sp>Live Builder - Editor Mode</sp>
+                <sp>Live Builder - Style Mode</sp>
             </h1>
 
             <ol>
-                <li id="header_files">
-                    <topic>Header files</topic>
-                    <desc>Place below two files in
-                        <fr>"Head Section"</fr> of both layout.</fr>.<br>
-                        <uf>
-                            <if>&lt;link type="text/css" rel="stylesheet" href="{{PutHName}}/ufields.css?" /&gt;<br>&lt;script type="text/javascript" src="{{PutHName}}/ufields.js?"&gt;&lt;/script&gt;</if>
-                        </uf>
+                <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/style.png"></screen>
+                <li id="important">
+                    <topic>!important</topic>
+                    <desc>• Remove
+                        <hp>!important</hp> from all classes.<br>• If you want to override style, you can place class at bottom side instead of using
+                        <hp>!important</hp>.
                     </desc>
                 </li>
-                <li id="blbodymain">
-                    <topic>#blbodymain</topic>
-                    <desc>Make sure to add id="blbodymain" in
-                        <tg>&lt;body&gt;</tg> tag for both
-                        <fr>"Free Layout"</fr>.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/blbodymain.png"></screen>
+                <li id="IDs">
+                    <topic>IDs</topic>
+                    <desc>• Do not use
+                        <datl>ID</datl> for applying style to any element.<br>• You can use classes there. If we use
+                        <datl>ID</datl>, our Style Mode will not work there.<br>• You can place
+                        <datl>ID</datl> attrubute for other purpose, but not add any style there.
+                    </desc>
                 </li>
-                <li id="logo">
-                    <topic>Logo</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-logo</hp> and
+                <li id="data_id">
+                    <topic>data-id</topic>
+                    <desc>• Add
                         <at>Attribute</at>
-                        <dat>data-logo-width="700"</dat> in both
-                        <fr>"Free Layout"</fr>.<br>Here
-                        <dat>"700"</dat> is the logo width in pixels as per the template.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Logo.png"></screen>
-                </li>
-                <li id="adgroup">
-                    <topic>AdGroup</topic>
-                    <desc>Add
-                        <at>Attributes</at>
-                        <dat>data-adgroup="11" data-ad-width="300"</dat> in both
-                        <fr>"Free Layout"</fr>.<br>Here
-                        <dat>"11"</dat> is AdGroup number and
-                        <dat>"300"</dat> is the width in pixels as per the template.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/ads.png"></screen>
-                </li>
-                <li id="weather">
-                    <topic>Weather</topic>
-                    <desc>Add weather code in "Sections" icon in "Site Manager".<br>Add
-                        <cl>Class</cl>
-                        <hp>hpe-weather-?</hp> in both
-                        <fr>"Free Layout"</fr>.<br>Here
-                        <hp>?</hp> is Section number which was created in "Sections" icon. We can get this number by visiting hostname.js and look for bottom side section functions.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/weather.png"></screen>
-                </li>
-                <li id="gsearch">
-                    <topic>Search Bar</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-gsearch</hp> in both
-                        <fr>"Free Layout"</fr>.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/gsearch.png"></screen>
-                </li>
-                <li id="social">
-                    <topic>Social Links</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-social</hp> in both
-                        <fr>"Free Layout"</fr>.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/social.png"></screen>
-                </li>
-                <li id="top_links">
-                    <topic>Top Links</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-top-links</hp> in both
-                        <fr>"Free Layout"</fr>.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/toplinks.png"></screen>
-                </li>
-                <li id="bottom_links">
-                    <topic>Bottom Links</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-bottom-links</hp> in both
-                        <fr>"Free Layout"</fr>.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/bottomlinks.png"></screen>
-                </li>
-                <li id="custom_text">
-                    <topic>Custom Text</topic>
-                    <desc>Place custom text in "Sections" icon in "Site Manager".<br>Add
-                        <cl>Class</cl>
-                        <hp>hpe-custom-text-?</hp> in parent div as shown in screenshot.<br> Add Script below script code which will display the text. <br>
-                        <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
-                        </datl><br> Here
-                        <hp>?</hp> is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br>
-                        <nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as
-                        <tg>&lt;/\ script&gt;</tg>
+                        <did>data-id="hpe-?"</did> in target block. Target block means the block where we want to apply style.<br>• Here
+                        <did>?</did> is the unique name(separated by dash) and it should not get repeated. <br>• For example, if you want to apply style for article heading of Highlight-1, then you can write
+                        <did>data-id="hpe-h1-article-heading-link"</did><br>
+                        <nt>NOTE : </nt> Do not use same
+                        <did>data-id</did> for other Target blocks as it should be unique one.
                     </desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/customtext.png"></screen>
                 </li>
-                <li id="custom_html">
-                    <topic>Custom HTML</topic>
-                    <desc>Place custom HTML code in "Sections" icon in "Site Manager".<br>Add
-                        <cl>Class</cl>
-                        <hp>hpe-custom-html-?</hp> in parent div as shown in screenshot.<br>
-                        <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
-                        </datl><br> Here
-                        <hp>?</hp> is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br>
-                        <nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as
-                        <tg>&lt;/\ script&gt;</tg>
-                    </desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/customhtml.png"></screen>
-                </li>
-                <li id="custom_img">
-                    <topic>Custom Image (Footer Background, Header Background, etc.)</topic>
-                    <desc>Upload Image in "Sections" icon in "Site Manager".<br>Add
-                        <cl>Class</cl>
-                        <hp>hpe-custom-img-?</hp> in parent div as shown in screenshot.<br>
-                        <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
-                        </datl><br> Here
-                        <hp>?</hp> is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br>
-                        <nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as
-                        <tg>&lt;/\ script&gt;</tg>
-                    </desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/customimg.png"></screen>
-                </li>
-                <li id="section">
-                    <topic>Section Layout</topic>
-                    <desc>If there are "Menu" and "SubMenu" links placed outside {{RepeatBegin}}, then <br>add
-                        <cl>Class</cl>
-                        <hp>hpe-in-menu-only</hp> and
-                        <at>Attributes</at>
-                        <dat>data-menu="{{MenuId}}"</dat> in Menu's div.<br>Sameway add
-                        <cl>Class</cl>
-                        <hp>hpe-in-submenu-only</hp> and
-                        <at>Attributes</at>
-                        <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}"</dat> in Submenu's div. <br>See below screenshot for "Menu" and "SubMenu".</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/sectionmenu.png"></screen>
-                    <br>
-                    <desc>Now, add
-                        <cl>Class</cl>
-                        <hp>hpe-in-section</hp> and
-                        <at>Attributes</at>
-                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/sectionlayout.png"></screen>
-                </li>
-                <li id="default">
-                    <topic>Default Layout</topic>
-                    <desc>Place below separate DIV around "Default Layout" code. Make sure to close the DIV in the end.<br>
-                        <datl>&lt;div class="hpe-article-detail" data-submenu="{{SubMenuId}}" data-detailid="{{ArticleId}}"&gt;</datl><br>
-                    </desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Defaultlayout.png"></screen>
-                </li>
-                <li id="menu">
-                    <topic>Menu</topic>
-                    <desc>There are multiple changes done in Menu bar, so it will be good to directly use below code which you can copy it. Here, I also highlighted new
-                        <cl>Classes</cl>,
-                        <at>Attributes</at> and one
-                        <atl>extra DIV</atl> added in menu bar.<br>
-                        <uf>
-                            <if>&lt;div id="cssmenu"&gt;<br> &lt;ul&gt;
-                                <br> {{RepeatBegin1}}
-                                <br> &lt;li class="menubodyhorizontal active has-sub custom_menu_{{MenuId}}
-                                <hp>hp-menu</hp>"
-                                <dat>data-menu="{{MenuId}}</dat>"&gt;<br>
-                                <datl>&lt;div class="hpe-in-menu" data-view="Horizontal" data-menu="{{MenuId}}" data-link="{{MenuLink}}" data-order="{{MenuOrder}}"&gt;</datl><br> &lt;a href="{{MenuLink}}" style="{{MenuStyle}}" class="menubodyhorizontal custom_menu_{{MenuId}}"&gt;{{Menu}}&lt;/a&gt;<br>
-                                <datl>&lt;/div&gt;</datl>
-                                <br> &lt;ul class="
-                                <hp>hp-submenu</hp>"
-                                <dat>data-menu="{{MenuId}}"</dat>&gt;<br> {{RepeatBegin2}}
-                                <br> &lt;li class="submenubodyhorizontal custom_Submenu_{{SubMenuId}} custom_menu_{{MenuId}}
-                                <hp>hpe-in-submenu</hp>" style="{{CSSDisplay}}"
-                                <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}" data-link="{{SubMenuLink}}" data-order="{{SubMenuOrder}}"</dat> &gt;<br>&lt;a href={{SubMenuLink}} style=" {{SubMenuMouseInOutColor}} {{SubMenuStyle}}" class="submenubodyhorizontal
-                                custom_Submenu_{{SubMenuId}} "&gt;{{SubMenu}}&lt;/a&gt;<br>&lt;/li&gt;
-                                <br> {{RepeatEnd2}}
-                                <br> &lt;/ul&gt;
-                                <br> &lt;/li&gt;
-                                <br> {{RepeatEnd1}}
-                                <br> &lt;/ul&gt;
-                                <br> &lt;/div&gt;</if>
-                        </uf>
-                        <br>
-                    </desc>
-                    <desc>
-                        Please refer to below screenshot as well.<br></desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Menu.png"></screen>
-                </li>
-                <li id="highlight">
-                    <topic>Highlights</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-in-hl?</hp> and
+                <li id="css">
+                    <topic>data-css</topic>
+                    <desc>• Add
                         <at>Attribute</at>
-                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> in both
-                        <fr>"Settings-Staff"</fr>.<br>Here
-                        <hp>?</hp> is the Highlight number.<br>
-                        <nt>NOTE :</nt> Make sure to place class inside {{RepeatBegin}} as shown in below screenshot.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Highlight.png"></screen>
-                    <desc>&#8226; If we want to highlight other boxes when we hover on one box, then just place
-                        <cl>Class</cl>
-                        <hp>hpe-parent</hp> outside {{RepeatBegin}}. Make sure that DIV should cover whole repeat area.<br>&#8226; If we want to show help button for slider to instruct them to move left to right, then just place
-                        <cl>Class</cl>
-                        <hp>hpe-slide-left</hp> outside {{RepeatBegin}}. Make sure that DIV should cover whole repeat area. Same way we can add place
-                        <cl>Class</cl>
-                        <hp>hpe-slide-up</hp> to guide for up to down slide movement.<br>&#8226; If we use news ticker, then place
-                        <cl>Class</cl>
-                        <hp>hpe-ticker</hp> outside {{RepeatBegin}}. Make sure that DIV should cover whole repeat area. This is required for placing highlight label in center.
+                        <css>data-css="$color$font-size$"</css> in target block.<br>• Here, you can add CSS properties separated by
+                        <css>$</css> sign without any spaces.<br>• You can get list of properties from inpspect. <br>• For example, you can inpspect target block and you will see list of properties such as color, font-size, font-weight, etc.<br>
+                        <nt>NOTE : </nt> Make sure to place CSS property name in small letter as showing in inpspect.
                     </desc>
                 </li>
-                <li id="previews">
-                    <topic>Previews</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-in-prev</hp> and
+                <li id="block">
+                    <topic>data-block</topic>
+                    <desc>• Add
                         <at>Attribute</at>
-                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Previews.png"></screen>
-                </li>
-                <li id="articlegroup">
-                    <topic>ArticleGroup</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-in-artgroup</hp> and
-                        <at>Attribute</at>
-                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/ArticleGroupall.png"></screen>
-                </li>
-                <li id="only_article">
-                    <topic>Only 1 Article</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-article-only</hp> and
-                        <at>Attribute</at>
-                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}"</dat> inside {{RepeatBegin}} as shown in below screenshot. You can use this method in ArticleGroup, Previews, Section, etc. having only 1 article limit was set.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/ArticleOnly.png"></screen>
-                </li>
-                <li id="event">
-                    <topic>Event(New)</topic>
-                    <desc>Add
-                        <cl>Class</cl>
-                        <hp>hpe-in-event</hp> and
-                        <at>Attribute</at>
-                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
-                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/event.png"></screen>
+                        <block>data-block="d-block p-relative f-left"</block> in target block.<br>• Here, you can add following values separated by space.<br> &nbsp;&nbsp;
+                        <block>d-inline</block> or
+                        <block>d-block</block><br><br> &nbsp;&nbsp;
+                        <block>p-relative</block> or
+                        <block>p-absolute</block><br><br> &nbsp;&nbsp;
+                        <block>f-left</block> or
+                        <block>f-right</block><br><br>• Normally, we are not placing required display, float and position values while designing site.<br>
+                        <nt>NOTE : </nt> If this
+                        <block>data-block</block> was not placed, it will not show correct style area in Style Mode. Make sure to use proper value here as per the target block. For example, if it require to place position:absolute, then you should use
+                        <block>p-absolute</block> value instead of
+                        <block>p-relative</block>.
+                    </desc>
                 </li>
             </ol>
         </div>
@@ -307,13 +94,33 @@
 
 
 <style>
+    did {
+        background: #0080ff;
+        color: white;
+        padding: 0 10px;
+        display: inline-block;
+    }
+    
+    block {
+        background: #ff00ff;
+        color: white;
+        padding: 0 10px;
+        display: inline-block;
+    }
+    
     datl {
         background: #3d2cff;
         color: white;
         padding: 0 10px;
-        line-height: 20px;
         display: inline-block;
         color: white;
+    }
+    
+    css {
+        background: #01ff00;
+        color: white;
+        padding: 0 10px;
+        display: inline-block;
     }
     
     .search_select {
@@ -418,7 +225,7 @@
     
     topic {
         width: 100%;
-        color: #4cae50;
+        color: purple;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -438,7 +245,7 @@
     li {
         font-size: 25px;
         line-height: 30px;
-        border-left: 5px solid #4caf50;
+        border-left: 5px solid purple;
         padding-left: 10px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -456,7 +263,7 @@
         background: #ddd;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         border-radius: 5px;
-        margin-left: 20px;
+        margin-bottom: 50px;
     }
     
     .hpv_div1 {
@@ -509,14 +316,14 @@
     
     li:hover {
         background: white;
-        box-shadow: 0px 0px 5px #4caf50;
+        box-shadow: 0px 0px 5px purple;
         transition: 300ms linear;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
     
     li:hover::marker {
-        color: #4caf50;
+        color: purple;
     }
     
     .search_select {
@@ -547,7 +354,6 @@
         background: #B40404;
         color: white;
         padding: 0 10px;
-        line-height: 20px;
         display: inline-block;
     }
     
@@ -555,7 +361,6 @@
         background: purple;
         color: white;
         padding: 0 10px;
-        line-height: 20px;
         display: inline-block;
     }
     
@@ -583,7 +388,7 @@
     h1 dmt {
         font-size: 45px;
         border-bottom: 2px solid;
-        color: #4caf50;
+        color: purple;
         float: left;
         width: 100%;
         text-align: center;
@@ -593,7 +398,7 @@
     h1 sp {
         font-size: 22px;
         color: white;
-        background: #4caf50;
+        background: purple;
         padding: 10px 50px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
