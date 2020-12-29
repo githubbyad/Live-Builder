@@ -31,26 +31,31 @@
     <div class="search_select">
         <select id="search_topic">
         <option value="">Select Topic</option>
-        <option value="header_files">Header files</option>
-        <option value="blbodymain">Body Tag ID</option>
-        <option value="logo">Logo</option>
         <option value="adgroup">Adgroup</option>
-        <option value="weather">Weather</option>
-        <option value="gsearch">Search Bar</option>
-        <option value="social">Social Links</option>
-        <option value="top_links">Top Links</option>
+        <option value="articlegroup">ArticleGroup</option>
+        <option value="blbodymain">Body Tag ID</option>
         <option value="bottom_links">Bottom Links</option>
         <option value="custom_text">Custom Text</option>
         <option value="custom_html">Custom HTML</option>
         <option value="custom_img">Custom Image</option>
-        <option value="section">Section Layout</option>
         <option value="default">Default Layout</option>
-        <option value="menu">Menu</option>
-        <option value="highlight">Highlight</option>
-        <option value="previews">Previews</option>
-        <option value="articlegroup">ArticleGroup</option>
-        <option value="only_article">Only 1 Article</option>
         <option value="event">Event(New)</option>
+        <option value="edition">E-Edition</option>
+        <option value="highlight">Highlight</option>
+        <option value="header_files">Header Scripts</option>
+        <option value="logo">Logo</option>
+        <option value="menu_bar">Menu Bar</option>
+        <option value="menu_only">Menu(Only)</option>
+        <option value="only_article">Only 1 Article</option>
+        <option value="previews">Previews</option>
+        <option value="css">Required CSS code</option>
+        <option value="js">Required JS code</option>
+        <option value="gsearch">Search Bar</option>
+        <option value="section">Section Layout</option>
+        <option value="social">Social Links</option>
+        <option value="menu_only">SubMenu(Only)</option>
+        <option value="top_links">Top Links</option>
+        <option value="weather">Weather</option>        
     </select>
     </div>
     <div class="hpv_div1">
@@ -61,9 +66,25 @@
             </h1>
 
             <ol>
+                <li id="js">
+                    <topic>Required JS code</topic>
+                    <desc>&#8226; Place below JS code in
+                        <fr>"SM Fields (JS file)"</fr> field under
+                        <fr>"Settings-Staff"</fr>.<br>
+                        <span class="link"><a href="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/ufields/ufields.js" target="_blank">JS Code</a></span>
+                    </desc>
+                </li>
+                <li id="css">
+                    <topic>Required CSS code</topic>
+                    <desc>&#8226; Place below CSS code in
+                        <fr>"SM Fields (CSS file)"</fr> field under
+                        <fr>"Settings-Staff"</fr>.<br>
+                        <span class="link"><a href="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/ufields/ufields.css" target="_blank">CSS Code</a></span>
+                    </desc>
+                </li>
                 <li id="header_files">
-                    <topic>Header files</topic>
-                    <desc>Place below two files in
+                    <topic>Header scripts</topic>
+                    <desc>&#8226; Place below two scripts in
                         <fr>"Head Section"</fr> of both layout.</fr>.<br>
                         <uf>
                             <if>&lt;link type="text/css" rel="stylesheet" href="{{PutHName}}/ufields.css?" /&gt;<br>&lt;script type="text/javascript" src="{{PutHName}}/ufields.js?"&gt;&lt;/script&gt;</if>
@@ -72,44 +93,48 @@
                 </li>
                 <li id="blbodymain">
                     <topic>#blbodymain</topic>
-                    <desc>Make sure to add id="blbodymain" in
+                    <desc>&#8226; Make sure to add id="blbodymain" in
                         <tg>&lt;body&gt;</tg> tag for both
                         <fr>"Free Layout"</fr>.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/blbodymain.png"></screen>
                 </li>
                 <li id="logo">
                     <topic>Logo</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-logo</hp> and
                         <at>Attribute</at>
                         <dat>data-logo-width="700"</dat> in both
-                        <fr>"Free Layout"</fr>.<br>Here
+                        <fr>"Free Layout"</fr>.<br>&#8226; Here
                         <dat>"700"</dat> is the logo width in pixels as per the template.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Logo.png"></screen>
                 </li>
                 <li id="adgroup">
                     <topic>AdGroup</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <at>Attributes</at>
                         <dat>data-adgroup="11" data-ad-width="300"</dat> in both
-                        <fr>"Free Layout"</fr>.<br>Here
+                        <fr>"Free Layout"</fr>.<br>&#8226; Here
                         <dat>"11"</dat> is AdGroup number and
                         <dat>"300"</dat> is the width in pixels as per the template.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/ads.png"></screen>
                 </li>
                 <li id="weather">
                     <topic>Weather</topic>
-                    <desc>Add weather code in "Sections" icon in "Site Manager".<br>Add
+                    <desc>&#8226; Add weather code in "Sections" icon in "Site Manager".<br>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-weather-?</hp> in both
-                        <fr>"Free Layout"</fr>.<br>Here
-                        <hp>?</hp> is Section number which was created in "Sections" icon. We can get this number by visiting hostname.js and look for bottom side section functions.</desc>
+                        <fr>"Free Layout"</fr>.<br>&#8226; Add below script code which will display the weather. <br>
+                        <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
+                        </datl>
+                        <br>&#8226; Here
+                        <hp>?</hp> is Section number which was created in "Sections" icon.<br>
+                        <nt>NOTE : </nt> We can get this number by visiting hostname.js and look for bottom side section functions.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/weather.png"></screen>
                 </li>
                 <li id="gsearch">
                     <topic>Search Bar</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-gsearch</hp> in both
                         <fr>"Free Layout"</fr>.</desc>
@@ -117,7 +142,7 @@
                 </li>
                 <li id="social">
                     <topic>Social Links</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-social</hp> in both
                         <fr>"Free Layout"</fr>.</desc>
@@ -125,7 +150,7 @@
                 </li>
                 <li id="top_links">
                     <topic>Top Links</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-top-links</hp> in both
                         <fr>"Free Layout"</fr>.</desc>
@@ -133,7 +158,7 @@
                 </li>
                 <li id="bottom_links">
                     <topic>Bottom Links</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-bottom-links</hp> in both
                         <fr>"Free Layout"</fr>.</desc>
@@ -141,11 +166,11 @@
                 </li>
                 <li id="custom_text">
                     <topic>Custom Text</topic>
-                    <desc>Place custom text in "Sections" icon in "Site Manager".<br>Add
+                    <desc>&#8226; Place custom text in "Sections" icon in "Site Manager".<br>&#8226; Add
                         <cl>Class</cl>
-                        <hp>hpe-custom-text-?</hp> in parent div as shown in screenshot.<br> Add Script below script code which will display the text. <br>
+                        <hp>hpe-custom-text-?</hp> in parent div as shown in screenshot.<br>&#8226; Add below script code which will display the text. <br>
                         <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
-                        </datl><br> Here
+                        </datl><br>&#8226; Here
                         <hp>?</hp> is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br>
                         <nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as
                         <tg>&lt;/\ script&gt;</tg>
@@ -154,11 +179,11 @@
                 </li>
                 <li id="custom_html">
                     <topic>Custom HTML</topic>
-                    <desc>Place custom HTML code in "Sections" icon in "Site Manager".<br>Add
+                    <desc>&#8226; Place custom HTML code in "Sections" icon in "Site Manager".<br>&#8226; Add
                         <cl>Class</cl>
-                        <hp>hpe-custom-html-?</hp> in parent div as shown in screenshot.<br>
+                        <hp>hpe-custom-html-?</hp> in parent div as shown in screenshot.<br>&#8226; Add below script code which will display the text/html. <br>
                         <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
-                        </datl><br> Here
+                        </datl><br>&#8226; Here
                         <hp>?</hp> is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br>
                         <nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as
                         <tg>&lt;/\ script&gt;</tg>
@@ -167,11 +192,11 @@
                 </li>
                 <li id="custom_img">
                     <topic>Custom Image (Footer Background, Header Background, etc.)</topic>
-                    <desc>Upload Image in "Sections" icon in "Site Manager".<br>Add
+                    <desc>&#8226; Upload Image in "Sections" icon in "Site Manager".<br>&#8226; Add
                         <cl>Class</cl>
-                        <hp>hpe-custom-img-?</hp> in parent div as shown in screenshot.<br>
+                        <hp>hpe-custom-img-?</hp> in parent div as shown in screenshot.<br>&#8226; Add below script code which will display the image. <br>
                         <datl>&lt;script type="text/javascript"&gt;Section?();&lt;/script&gt;</if>
-                        </datl><br> Here
+                        </datl><br>&#8226; Here
                         <hp>?</hp> is the section number. We can get this number by visiting hostname.js and look for bottom side section functions.<br>
                         <nt>NOTE :</nt> When we place this section script in Preview, Highlights, etc. which creates ".js" file, then you just need to add "\" in ending sript tag such as
                         <tg>&lt;/\ script&gt;</tg>
@@ -180,18 +205,18 @@
                 </li>
                 <li id="section">
                     <topic>Section Layout</topic>
-                    <desc>If there are "Menu" and "SubMenu" links placed outside {{RepeatBegin}}, then <br>add
+                    <desc>&#8226; If there are "Menu" and "SubMenu" links placed outside {{RepeatBegin}}, then add
                         <cl>Class</cl>
                         <hp>hpe-in-menu-only</hp> and
                         <at>Attributes</at>
-                        <dat>data-menu="{{MenuId}}"</dat> in Menu's div.<br>Sameway add
+                        <dat>data-menu="{{MenuId}}"</dat> in Menu's div.<br>&#8226; Sameway add
                         <cl>Class</cl>
                         <hp>hpe-in-submenu-only</hp> and
                         <at>Attributes</at>
-                        <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}"</dat> in Submenu's div. <br>See below screenshot for "Menu" and "SubMenu".</desc>
+                        <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}"</dat> in Submenu's div. <br>&#8226; See below screenshot for "Menu" and "SubMenu".</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/sectionmenu.png"></screen>
                     <br>
-                    <desc>Now, add
+                    <desc>&#8226; Now, add
                         <cl>Class</cl>
                         <hp>hpe-in-section</hp> and
                         <at>Attributes</at>
@@ -200,14 +225,14 @@
                 </li>
                 <li id="default">
                     <topic>Default Layout</topic>
-                    <desc>Place below separate DIV around "Default Layout" code. Make sure to close the DIV in the end.<br>
+                    <desc>&#8226; Place below separate DIV around "Default Layout" code. Make sure to close the DIV in the end.<br>
                         <datl>&lt;div class="hpe-article-detail" data-submenu="{{SubMenuId}}" data-detailid="{{ArticleId}}"&gt;</datl><br>
                     </desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Defaultlayout.png"></screen>
                 </li>
-                <li id="menu">
-                    <topic>Menu</topic>
-                    <desc>There are multiple changes done in Menu bar, so it will be good to directly use below code which you can copy it. Here, I also highlighted new
+                <li id="menu_bar">
+                    <topic>Menu Bar</topic>
+                    <desc>&#8226; There are multiple changes done in Menu bar, so it will be good to directly use below code which you can copy it.<br>&#8226; Here, I also highlighted new
                         <cl>Classes</cl>,
                         <at>Attributes</at> and one
                         <atl>extra DIV</atl> added in menu bar.<br>
@@ -236,17 +261,30 @@
                         <br>
                     </desc>
                     <desc>
-                        Please refer to below screenshot as well.<br></desc>
+                        &#8226; Please refer to below screenshot as well.<br></desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Menu.png"></screen>
+                </li>
+                <li id="menu_only">
+                    <topic>Menu(Only) & SubMenu(Only)</topic>
+                    <desc>&#8226; If there is only "Menu" and "SubMenu" link placed outside {{RepeatBegin}}, then add
+                        <cl>Class</cl>
+                        <hp>hpe-in-menu-only</hp> and
+                        <at>Attributes</at>
+                        <dat>data-menu="{{MenuId}}"</dat> in Menu's div.<br>&#8226; Sameway add
+                        <cl>Class</cl>
+                        <hp>hpe-in-submenu-only</hp> and
+                        <at>Attributes</at>
+                        <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}"</dat> in Submenu's div. <br>&#8226; See below screenshot for "Menu" and "SubMenu".</desc>
+                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/sectionmenu.png"></screen>
                 </li>
                 <li id="highlight">
                     <topic>Highlights</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-in-hl?</hp> and
                         <at>Attribute</at>
                         <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> in both
-                        <fr>"Settings-Staff"</fr>.<br>Here
+                        <fr>"Settings-Staff"</fr>.<br>&#8226; Here
                         <hp>?</hp> is the Highlight number.<br>
                         <nt>NOTE :</nt> Make sure to place class inside {{RepeatBegin}} as shown in below screenshot.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Highlight.png"></screen>
@@ -263,7 +301,7 @@
                 </li>
                 <li id="previews">
                     <topic>Previews</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-in-prev</hp> and
                         <at>Attribute</at>
@@ -272,7 +310,7 @@
                 </li>
                 <li id="articlegroup">
                     <topic>ArticleGroup</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-in-artgroup</hp> and
                         <at>Attribute</at>
@@ -281,7 +319,7 @@
                 </li>
                 <li id="only_article">
                     <topic>Only 1 Article</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-article-only</hp> and
                         <at>Attribute</at>
@@ -290,12 +328,21 @@
                 </li>
                 <li id="event">
                     <topic>Event(New)</topic>
-                    <desc>Add
+                    <desc>&#8226; Add
                         <cl>Class</cl>
                         <hp>hpe-in-event</hp> and
                         <at>Attribute</at>
                         <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/event.png"></screen>
+                </li>
+                <li id="edition">
+                    <topic>E-Edition</topic>
+                    <desc>&#8226; Add
+                        <cl>Class</cl>
+                        <hp>hpe-in-edition</hp> and
+                        <at>Attribute</at>
+                        <dat>data-article="{{ArticleId}}" data-url="{{HeadingLink}}" data-menu="{{Menu}}" data-submenu="{{SubMenu}}" data-date="{{MonthI}}_{{DayI}}_{{YearI}}"</dat> inside {{RepeatBegin}} as shown in below screenshot.</desc>
+                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/edition.png"></screen>
                 </li>
             </ol>
         </div>
@@ -369,6 +416,23 @@
     
     .search_close:hover {
         background: #3054aa;
+    }
+    
+    .link a {
+        text-decoration: none;
+        background: #4caf50;
+        display: inline-block;
+        color: white;
+        padding: 0 40px;
+        border-radius: 5px;
+        line-height: 35px;
+        font-size: 15px;
+    }
+    
+    .link {
+        margin-top: 10px;
+        float: left;
+        margin-left: 20px;
     }
     
     .search_select select * {
