@@ -43,6 +43,7 @@
         <option value="edition">E-Edition</option>
         <option value="highlight">Highlight</option>
         <option value="header_files">Header Scripts</option>
+        <option value="block">Issue with Editor Area on Hover?</option>
         <option value="logo">Logo</option>
         <option value="menu_bar">Menu Bar</option>
         <option value="menu_only">Menu(Only)</option>
@@ -97,6 +98,22 @@
                         <tg>&lt;body&gt;</tg> tag for both
                         <fr>"Free Layout"</fr>.</desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/blbodymain.png"></screen>
+                </li>
+                <li id="block">
+                    <topic>Issue with Editor Area on Hover?</topic>
+                    <desc>&#8226; Sometimes, editor area is not showing in proper size due to that block's placement.<br>&#8226; Here, you need to place
+                        <at>Attribute</at>
+                        <dat>data-block="d-block p-relative f-left"</dat> in target block.<br>• Here, you can add following values separated by space.<br>&nbsp;&nbsp;
+                        <dat>d-inline</dat> or
+                        <dat>d-block</dat><br> &nbsp;&nbsp;
+                        <dat>p-relative</dat> or
+                        <dat>p-absolute</dat><br> &nbsp;&nbsp;
+                        <dat>f-left</dat> or
+                        <dat>f-right</dat><br>• Normally, we are not placing required display, float and position values while designing site.<br>
+                        <nt>NOTE : </nt> Make sure to use proper value here as per the target block.<br>&#8226; For example, if it require to place position:absolute, then you should use
+                        <dat>p-absolute</dat> value instead of
+                        <dat>p-relative</dat>.</desc>
+                    <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/block.png"></screen>
                 </li>
                 <li id="logo">
                     <topic>Logo</topic>
