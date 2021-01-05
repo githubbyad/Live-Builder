@@ -8,6 +8,7 @@
     <script>
         $(document).ready(function() {
             $('.search_box img').click(function() {
+                $("#search_topic").val($("#search_topic option:first").val());
                 $('.search_select').css('display', 'block');
                 $('.search_close').css('display', 'flex');
             });
@@ -30,7 +31,7 @@
     <div class="search_close"></div>
     <div class="search_select">
         <select id="search_topic">
-        <option value="">Select Topic</option>
+        <option value="" class="st_default">Select Category</option>
         <option value="adgroup">Adgroup</option>
         <option value="articlegroup">ArticleGroup</option>
         <option value="blbodymain">Body Tag ID</option>
@@ -411,6 +412,12 @@
 
 
 <style>
+    #search_topic .st_default {
+        background: gray;
+        color: white;
+        font-style: italic;
+    }
+    
     datl {
         background: #3d2cff;
         color: white;
