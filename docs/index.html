@@ -47,7 +47,8 @@
         <option value="header_files">Header Scripts</option>
         <option value="block">Issue with Editor Area on Hover?</option>
         <option value="logo">Logo</option>
-        <option value="menu_bar">Menu Bar</option>
+        <option value="menu_bar">Menu Bar (Normal)</option>
+        <option value="menu_bar2">Menu Bar (Bootstrap)</option>
         <option value="menu_only">Menu(Only)</option>
         <option value="only_article">Only 1 Article</option>
         <option value="previews">Previews</option>
@@ -258,7 +259,7 @@
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Defaultlayout.png"></screen>
                 </li>
                 <li id="menu_bar">
-                    <topic>Menu Bar</topic>
+                    <topic>Menu Bar (Normal)</topic>
                     <desc>&#8226; There are multiple changes done in Menu bar, so it will be good to directly use below code which you can copy it.<br>&#8226; Here, I also highlighted new
                         <cl>Classes</cl>,
                         <at>Attributes</at> and one
@@ -284,28 +285,35 @@
                                 <br> {{RepeatEnd1}}
                                 <br> &lt;/ul&gt;
                                 <br> &lt;/div&gt;</if></uf><br>
-                                br>&#8226; Below is for Bootstrap menus
-                            <uf><if>&lt;ul class="navbar-nav flex-wrap my-3 my-lg-0 px-2 px-lg-0"&gt;<br>
-                                    {{RepeatBegin1}}<br>       
-                                    &lt;li class="cus-menu-li nav-item dropdown py-2 pe-2 hp-menu border-end" data-menu="{{MenuId}}" data-link="{{MenuLink}}" data-view="Horizontal" data-order="{{MenuOrder}}"&gt;<br>            
-                                    &lt;a id="navbarDropdown" class="nav-link cus-menu-id-{{MenuId}} fs-5_1 fw-bold dropdown-toggle text-uppercase text-gray hpe-in-menu px-2 px-2 px-lg-4" data-menu="{{MenuId}}" style="" href="{{MenuLink}}" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;{{Menu}}&lt;/a&gt;<br>          
-                                    &lt;ul class="dropdown-menu cus-submenu-ul fade-up mb-2 mb-lg-0 mx-3 mx-lg-0 hp-submenu border-0 bg-black" data-menu="{{MenuId}}" aria-labelledby="navbarDropdown" data-bs-popper="none"&gt;<br>                                              
-                                    {{RepeatBegin2}}<br>
-                                    &lt;li class="cus-submenu-li hpe-in-submenu" data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}" data-link="{{SubMenuLink}}" data-order="{{SubMenuOrder}}" style="{{CSSDisplay}}"&gt;<br>                                
-                                    &lt;a class="dropdown-item py-2 cus-submenu-id-{{SubMenuId}} fs-5_1 text-white text-warning-hover text-uppercase" href="{{SubMenuLink}}"&gt;&lt;i class="cus-131-submenu-icon fa fa-caret-right text-gray pe-2" aria-hidden="true"&gt;&lt;/i&gt;{{SubMenu}}&lt;/a&gt;<br>                            
-                                    &lt;/li&gt;<br>
-                                    {{RepeatEnd2}}<br>  
-                                    &lt;/ul&gt;<br>
-                                    &lt;/li&gt;<br>
-                                    {{RepeatEnd1}}<br>     
-                                    &lt;/ul&gt;</if>
-                        </uf>
                         <br>
                     </desc>
                     <desc>
                         &#8226; Please refer to below screenshot as well.<br></desc>
                     <screen><img src="https://raw.githubusercontent.com/githubbyad/Homepage-Editor/main/screenshots/Menu.png"></screen>
                 </li>
+
+                <li id="menu_bar2">
+                    <topic>Menu Bar (Bootstrap)</topic>
+                    <desc>&#8226; There are multiple changes done in Menu bar, so it will be good to directly use below code which you can copy it.<br>
+                        <uf>
+                        <if>&lt;ul class="navbar-nav flex-wrap my-3 my-lg-0 px-2 px-lg-0"&gt;<br>
+                                    {{RepeatBegin1}}<br>       
+                                    &lt;li class="cus-menu-li nav-item dropdown py-2 pe-2 border-end <hp>hp-menu</hp>" <dat>data-menu="{{MenuId}}" data-link="{{MenuLink}}" data-view="Horizontal" data-order="{{MenuOrder}}"</dat>&gt;<br>            
+                                    &lt;a id="navbarDropdown" class="nav-link cus-menu-id-{{MenuId}} fs-5_1 fw-bold dropdown-toggle text-uppercase text-gray hpe-in-menu px-2 px-2 px-lg-4" data-menu="{{MenuId}}" style="" href="{{MenuLink}}" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;{{Menu}}&lt;/a&gt;<br>          
+                                    &lt;ul class="dropdown-menu cus-submenu-ul fade-up mb-2 mb-lg-0 mx-3 mx-lg-0 border-0 bg-black <hp>hp-submenu</hp>" <dat>data-menu="{{MenuId}}"</dat> aria-labelledby="navbarDropdown" data-bs-popper="none"&gt;<br>                                              
+                                    {{RepeatBegin2}}<br>
+                                    &lt;li class="cus-submenu-li hpe-in-submenu" <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}" data-link="{{SubMenuLink}}" data-order="{{SubMenuOrder}}"</dat> style="{{CSSDisplay}}"&gt;<br>                                
+                                    &lt;a class="dropdown-item py-2 cus-submenu-id-{{SubMenuId}} fs-5_1 text-white text-warning-hover text-uppercase" href="{{SubMenuLink}}"&gt;&lt;i class="cus-131-submenu-icon fa fa-caret-right text-gray pe-2" aria-hidden="true"&gt;&lt;/i&gt;{{SubMenu}}&lt;/a&gt;<br>                            
+                                    &lt;/li&gt;<br>
+                                    {{RepeatEnd2}}<br>  
+                                    &lt;/ul&gt;<br>
+                                    &lt;/li&gt;<br>
+                                    {{RepeatEnd1}}<br>     
+                                    &lt;/ul&gt;</if></uf><br>                                
+                        <br>
+                    </desc>
+                </li>
+
                 <li id="menu_only">
                     <topic>Menu(Only) & SubMenu(Only)</topic>
                     <desc>&#8226; If there is only "Menu" and "SubMenu" link placed outside {{RepeatBegin}}, then add
