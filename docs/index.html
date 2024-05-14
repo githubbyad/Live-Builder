@@ -299,10 +299,10 @@
                         <if>&lt;ul class="navbar-nav flex-wrap my-3 my-lg-0 px-2 px-lg-0"&gt;<br>
                                     {{RepeatBegin1}}<br>       
                                     &lt;li class="cus-menu-li nav-item dropdown py-2 pe-2 border-end <hp>hp-menu</hp>" <dat>data-menu="{{MenuId}}" data-link="{{MenuLink}}" data-view="Horizontal" data-order="{{MenuOrder}}"</dat>&gt;<br>            
-                                    &lt;a id="navbarDropdown" class="nav-link cus-menu-id-{{MenuId}} fs-5_1 fw-bold dropdown-toggle text-uppercase text-gray hpe-in-menu px-2 px-2 px-lg-4" data-menu="{{MenuId}}" style="" href="{{MenuLink}}" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;{{Menu}}&lt;/a&gt;<br>          
+                                    &lt;a id="navbarDropdown" class="nav-link cus-menu-id-{{MenuId}} fs-5_1 fw-bold dropdown-toggle text-uppercase text-gray <hp>hpe-in-menu</hp> px-2 px-2 px-lg-4" data-menu="{{MenuId}}" style="" href="{{MenuLink}}" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;{{Menu}}&lt;/a&gt;<br>          
                                     &lt;ul class="dropdown-menu cus-submenu-ul fade-up mb-2 mb-lg-0 mx-3 mx-lg-0 border-0 bg-black <hp>hp-submenu</hp>" <dat>data-menu="{{MenuId}}"</dat> aria-labelledby="navbarDropdown" data-bs-popper="none"&gt;<br>                                              
                                     {{RepeatBegin2}}<br>
-                                    &lt;li class="cus-submenu-li hpe-in-submenu" <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}" data-link="{{SubMenuLink}}" data-order="{{SubMenuOrder}}"</dat> style="{{CSSDisplay}}"&gt;<br>                                
+                                    &lt;li class="cus-submenu-li <hp>hpe-in-submenu</hp>" <dat>data-menu="{{MenuId}}" data-submenu="{{SubMenuId}}" data-link="{{SubMenuLink}}" data-order="{{SubMenuOrder}}"</dat> style="{{CSSDisplay}}"&gt;<br>                                
                                     &lt;a class="dropdown-item py-2 cus-submenu-id-{{SubMenuId}} fs-5_1 text-white text-warning-hover text-uppercase" href="{{SubMenuLink}}"&gt;&lt;i class="cus-131-submenu-icon fa fa-caret-right text-gray pe-2" aria-hidden="true"&gt;&lt;/i&gt;{{SubMenu}}&lt;/a&gt;<br>                            
                                     &lt;/li&gt;<br>
                                     {{RepeatEnd2}}<br>  
